@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background: rgb(221, 214, 214);
+}
+
+.restaurant-page {
+    max-width: 1600px;
+    margin: 0 auto;
+    max-height: 100%
+}
+
+/*NAVBAR*/
+
+.wrap {
+    max-width: 1600px;
+    background: url('/img/menu.png') top no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 726px;
+}
+
+.navbar {
+    padding: 5px;   
+    display: flex;
+    height: 80px;
+}
+
+.navbar-title {
+    color: rgb(255, 255, 255);
+    font-family: 'Yeseva One', cursive;
+    font-size: 46px;
+    text-align: center;
+    text-transform: uppercase;  
+    margin: 37px 0 0 -17px; 
+    flex-grow: 1;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar-menu ul {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 22px;
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    width: 576px;
+   
+        
+}
+
+.navbar-menu li {
+    cursor: pointer;
+    margin-top: 46px; 
+   
+
+}
+
+.navbar-menu .link {
+    margin-right: 39px;
+
+}
+
+.navbar-menu .link a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.navbar-menu .social {
+    margin-right: -3px;
+
+}
+
+.navbar-menu .social a {
+    padding: 1px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.navbar-menu .social  img {
+    width: 25px;
+    filter: invert(77%) sepia(83%) saturate(2000%) hue-rotate(0deg) brightness(100%) contrast(80%);
+}
+
+.navbar-menu .icon {
+    color: rgba(218, 179, 62, 255);
+}
+
+.header-text {
+    margin: 137px 0 0 356px;
+    width: 959px;
+    font-size: 5.0em;
+    color: #fff;
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.header img {
+    filter: invert(100%);
+    margin-top: 75px;
+}
+
+
+.header-text .fisrtButton {
+    width: 184px;
+    height: 50px;    
+    background-color: rgba(26, 26, 27, 0.6);
+    color: #fff3f3;   
+    float: left;
+    margin-right: 98px;
+    border: 1px solid #000;
+}
+
+.header-text .secondButton {
+    width: 184px;
+    height: 50px;  
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff3f3;   
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+.header-text .fisrtButton,
+.header-text .secondButton {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    align-self: end;
+    margin-top: 10px;
+}
+
+
+/*CONTAINER*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about {
+    display: flex;
+    text-align: center;
+    padding: 30px;
+    justify-content: center;
+    background: url('/img/tema.png') top no-repeat;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+}
+
+.about .text {
+    width: 446px;
+}
+
+.about .icon {
+    filter: invert(2%) sepia(100%) saturate(2000%) hue-rotate(0deg) brightness(100%) contrast(80%);
+
+}
+
+.about .text  p:nth-child(1) {
+    color: rgba(204, 153, 0, 255);
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+}
+
+.about .text  p {
+    font-size: 16px;
+    color:black;
+}
+
+
+/*INGREDIENTS*/
+
+.ingredients {
+    background: url('/img/fundo.png') top no-repeat;
+    background-repeat: no-repeat;
+    height: 726px;
+    background-size: cover;
+}
+
+
+.ingredients .information {
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 570px;
+    height: 530px;
+    float: right;
+    margin-right: 208px;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.information .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 68px;
+}
+
+.information .topic {
+    font-family: 'Yeseva One', cursive;
+    font-size: 35px;
+}
+
+.pictures-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.picture {
+     border-radius: 5em;
+     border: 8px solid rgb(0, 0, 0, 0.2);
+}
+
+/*MENU*/
+
+.menu {
+    background: url('/img/tema.png') top no-repeat;
+    background-repeat: no-repeat;
+    height: 970px;
+    background-size: cover;
+    display: flex ;
+}
+
+.menu  .col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu h2,
+.menu .hr  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu hr,
+.menu .hr {
+    filter:invert(2%) sepia(100%) saturate(2000%) hue-rotate(0deg) brightness(100%) contrast(80%);  
+}
+
+.menu hr {
+    margin: 5px;
+}
+
+.menu .norm {
+    margin: 0 auto;
+    width: 400px;    
+}
+
+
+.menu  h2 {
+   color: #c9a131;
+   font-size: 36px;
+   font-family: 'Yeseva One', cursive;
+}
+
+.menu .text {
+    width: 70%;
+    float: left;
+    text-align: left;
+    color: #c9a131;
+}
+
+.menu .price {
+    width: 30%;
+    float: right;
+    text-align: right;
+    color: #c9a131;
+}
+
+.menu h3 {
+    margin-top: 30px;
+}
+
+.menu .salads,
+.menu .dishes {
+    margin-top: 100px;
+}
+
+.menu .special-content {
+    margin: 0 auto;
+    width: 402px;
+    text-align: -webkit-right;
+}
+
+.menu .special-content p {
+    color: white;
+    background-color: #c9a131;
+    width: 60px;
+    height: 26px;
+    text-align: center;
+}
+
+.menu .special {
+    margin: 0 auto;
+    width: 400px;
+    border: 1px #c9a131;
+    border-style: outset;
+}
+
+
+/*REVIEWS*/
+
+.reviews {
+    background: url('/img/food.png') top no-repeat;
+    background-repeat: no-repeat;
+    height: 760px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.reviews .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 788px;
+    height: 382px;
+    float: right;   
+    color: rgba(221, 224, 223,255); 
+}
+
+.reviews .topic {
+    font-family: 'Yeseva One', cursive;
+    font-size: 35px;
+}
+
+q {
+    quotes: "“" "”" "‘" "’";    
+}
+
+q:before {
+    content: open-quote;
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+q:after {
+    content: close-quote;
+}
+
+.reviews .text{
+    font-size: 25px;
+    text-align: center;
+    color: rgba(221, 224, 223,255);
+    padding: 0px 76px;
+}
+
+.reviews .phrase {
+    color: #fff;
+    margin-top: 10px;
+
+}
+
+
+/*RESERVATION*/
+.reservation {
+    background: url('/img/tema.png') top no-repeat;
+    background-repeat: no-repeat;
+    height: 550px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.reservation .food {
+    flex-grow: 1;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation img {
+    padding: 8px;
+}  
+
+.reservation .img2-food {
+    width: 181px;
+}
+.reservation .img-food {
+    height: 341px;
+}
+
+.reservation .container {
+    margin-top: 70px;
+    margin-right: 110px;
+}
+
+.reservation .container .text {
+    text-align: center;
+    width: 443px;
+    justify-content: center;
+    align-content: center;
+}
+
+.reservation .container .text .hr {
+    filter: invert(2%) sepia(100%) saturate(2000%) hue-rotate(0deg) brightness(100%) contrast(80%);
+
+}
+
+.reservation .container .text h2 {
+    color: #cc9900;
+    font-size: 31px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.reservation .pa {
+    margin-top: 10px;
+}
+
+.reservation .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+form {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    color: #cc9900;
+}
+
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+input,
+.select-style {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 156px;
+    height: 30px;
+}
+
+.select-style {
+    height: 41px;
+}
+
+input:hover {
+    
+    border: 1px solid  #c9a131 ;
+}
+
+.select-style:hover {
+    
+    border: 1px solid  #c9a131 ;
+}
+
+.validation {
+    grid-column: span 2;
+    justify-self: center;
+    height: 60px;
+}
+
+.validation input {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: #c9a131;
+    border: 0;
+    margin-top: 5%;
+    color: white;
+    font-size: 1.1em;
+    width: 180px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background: black;
+    max-width: 1600px;
+    height: 376px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position:absolute;
+}
+
+footer .col {
+    width: 21%;
+    padding: 68px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .col h2 {
+    font-size: 21px;
+    font-family: 'Yeseva One', cursive;
+}
+
+footer .col p {
+    font-size: 16px;
+    font-family: Open   ;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+footer .hr {
+    margin: 0 auto;
+    width: 124px;
+}
+
+footer ul {
+    font-size: 22px;
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+footer li {
+    cursor: pointer;
+    margin-top: 46px; 
+}
+
+footer .cards {
+    margin-right: 10px;
+}
+
+footer .cards a {
+    padding: 1px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+footer .social {
+    margin-right: -3px;
+}
+
+footer .social a {
+    padding: 1px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+footer .social  img {
+    width: 25px;
+    filter: invert(100%) sepia(0%) saturate(2000%) hue-rotate(0deg) brightness(100%) contrast(80%);
+}
+
+footer .icon {
+    color: #fff;
+}
