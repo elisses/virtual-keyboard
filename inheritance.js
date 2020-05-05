@@ -1,14 +1,13 @@
 function BaseBuilder(value) {  
     this.value = value; 
     this.plus = function (...base) {
-        this.value = this.value + base.reduce((accumulator,currentValue) => accumulator + currentValue)
+        this.value = this.value + base.reduce((acc,curr) => acc + curr)
        return this.value 
+    } 
+    this.get = function (){
+        return this.value
     }    
 }
-
-BaseBuilder.prototype.get = function (){
-    return this.value
-} 
 
 // Class with Inheritance es6
 
@@ -64,7 +63,6 @@ function StringBuilder (str){
 }
 
 StringBuilder.prototype = Object.create(BaseBuilder.prototype);
-StringBuilder.prototype.constructor = StringBuilder;
 
 StringBuilder.prototype.minus = function(n){    
     let pieceStr = this.value.length - n
