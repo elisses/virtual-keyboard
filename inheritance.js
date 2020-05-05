@@ -19,7 +19,7 @@ class IntBuilder {
         BaseBuilder.call(this, number)       
     }     
     minus = function (...number) {
-        this.value = this.value - number.reduce((accumulator,currentValue) => accumulator + currentValue)
+        this.value = this.value - number.reduce((acc,curr) => acc + curr,0)
         return this.value        
     }
     multiply = function (number) {
