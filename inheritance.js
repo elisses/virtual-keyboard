@@ -1,6 +1,14 @@
 function BaseBuilder(value) {  
-    this.value = value;    
+    this.value = value; 
+    this.plus = function (...base) {
+        this.value = this.value + base.reduce((accumulator,currentValue) => accumulator + currentValue)
+       return this.value 
+    }    
 }
+
+BaseBuilder.prototype.get = function (){
+    return this.value
+} 
 
 // Class with Inheritance es6
 
@@ -9,36 +17,31 @@ class IntBuilder {
         number = typeof 
         number ==='number'? number : 0;
         BaseBuilder.call(this, number)       
-    }    
-    plus = function(...number) {
-       this.value = this.value + number.reduce((accumulator,currentValue) => accumulator + currentValue)
-       return `${this.value}`
-    }
+    }     
     minus = function (...number) {
         this.value = this.value - number.reduce((accumulator,currentValue) => accumulator + currentValue)
-        return `${this.value}`        
+        return this.value        
     }
     multiply = function (number) {
         this.value = this.value * number
-        return `${this.value}`
+        return this.value
     }
     divide = function (number) {
         this.value = this.value / number
-        return `${this.value}`
+        return this.value
     }
     mod = function (number) {
         this.value = this.value % number
-        return `${this.value}`
-    }
-    get = function () {
-        return `${this.value}`;
-    }
+        return this.value
+    }    
     static random(min, max){
        this.value = Math.floor(Math.random() * (max - min)) + min
-       return `${this.value}`
+       return this.value
     }
 
 }
+
+Object.assign(IntBuilder.prototype, BaseBuilder.prototype)
 
 let intBuilder = new IntBuilder(10)
 
@@ -60,10 +63,8 @@ function StringBuilder (str){
     BaseBuilder.call(this,str)
 }
 
-StringBuilder.prototype.plus = function(...str){    
-    this.value = `${this.value}${str.join('')}`
-    return `${this.value}`
-}
+StringBuilder.prototype = Object.create(BaseBuilder.prototype);
+StringBuilder.prototype.constructor = StringBuilder;
 
 StringBuilder.prototype.minus = function(n){    
     let pieceStr = this.value.length - n
@@ -74,25 +75,22 @@ StringBuilder.prototype.minus = function(n){
 StringBuilder.prototype.multiply = function(n){ 
     const repeat = new Array(n)   
     this.value = repeat.fill(this.value).join('').trim()
-    return `${this.value}`
+    return this.value
 }
 
 StringBuilder.prototype.divide = function(n){      
     let k = Math.floor(this.value.length / n)
     this.value = this.value.slice(0, k)
-    return `${this.value}`
+    return this.value
 }
 
 StringBuilder.prototype.remove = function(str){
      this.value = this.value.split('').filter(ltr => ltr != str).join('')
-    return `${this.value}`
+    return this.value
 }
 StringBuilder.prototype.sub = function(from, n){        
     this.value = this.value.slice(from,n)
-    return `${this.value}`
-}
-StringBuilder.prototype.get = function(){     
-    return `${this.value}`
+    return this.value
 }
 
 //testing
@@ -104,4 +102,4 @@ console.log("Multipliy: " + stringBuilder.multiply(3))
 console.log("Divide: " + stringBuilder.divide(4))
 console.log("Remove: " + stringBuilder.remove('l'))
 console.log("Sub: " + stringBuilder.sub(1))
-console.log("Get: " + stringBuilder.get())
+console.log("Get: " + stringBuilder.get())    
