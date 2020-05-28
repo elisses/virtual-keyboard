@@ -1,0 +1,107 @@
+*,
+body {
+  margin: 0;
+}
+.container {
+  padding: 20px;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: #000;
+}
+
+.app-textarea {
+  width: 704px;
+  height: 300px;
+  background: #bababa;
+  color: #fff;
+}
+
+.keyboard {
+  margin-top: 20px;
+}
+
+ul {
+  width: 704px;
+  margin: 0 auto;
+  padding: 5px;
+  padding-left: 0;
+  padding-bottom: 0;
+  background: #888888;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.button-key {
+  width: 35px;
+  height: 35px;
+  color: rgb(255, 255, 255);
+  background-color: #444141;
+  margin: 5px;
+  font-size: 15px;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-key:hover {
+  background: #799faa;
+}
+.button-key:focus {
+  background: #9c27b0;
+}
+
+.Backspace,
+.Tab,
+.Delete,
+.CapsLock,
+.Enter,
+.ShiftLeft,
+.ShiftRight,
+.ControlLeft,
+.ControlRight,
+.Win,
+.AltLeft,
+.AltRight,
+.ArrowUp,
+.ArrowDown,
+.ArrowRight,
+.ArrowLeft {
+  background-color: rgb(5, 5, 5);
+  font-weight: bold;
+}
+
+.Backspace {
+  width: 100px;
+}
+
+.Tab,
+.Delete {
+  width: 45px;
+}
+
+.CapsLock,
+.Enter,
+.ShiftLeft,
+.ShiftRight {
+  width: 90px;
+}
+
+.ControlLeft,
+.ControlRight,
+.Win {
+  width: 40px;
+}
+
+.Space {
+  width: 305px;
+  color: rgb(68, 65, 65);
+}
+
+.Space:hover {
+  color: #799faa;
+}
+
+p {
+  color: #fff;
+}
