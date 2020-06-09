@@ -1,0 +1,61 @@
+import refresh from '../img/refresh.svg';
+import pictureMicrofon from '../img/microfon.png';
+const htmlLocal = (body) => {
+    const firstgroup = document.createElement('section');
+    firstgroup.setAttribute('id', 'firstgroup');
+    const section = document.createElement('section');
+    section.setAttribute('id', 'container');
+    const imgRec = document.createElement('img');
+    imgRec.src = refresh;
+    imgRec.setAttribute('class', 'imgRec');
+    const button = document.createElement('button');
+    button.setAttribute('id', 'changeColor');
+    button.appendChild(imgRec);
+    const btnEnglish = document.createElement('button');
+    btnEnglish.setAttribute('id', 'english');
+    btnEnglish.innerText = 'Eng';
+    const btnPolish = document.createElement('button');
+    btnPolish.setAttribute('id', 'Polish');
+    btnPolish.innerText = 'Pol';
+    const btnFar = document.createElement('button');
+    btnFar.setAttribute('id', 'btnFar');
+    btnFar.innerText = '°F';
+    const btnCel = document.createElement('button');
+    btnCel.setAttribute('id', 'btnCel');
+    btnCel.innerText = '°C';
+    const sectionInput = document.createElement('section');
+    sectionInput.setAttribute('id', 'searchInput')
+    const input = document.createElement('input');
+    input.setAttribute('id', 'location');
+    input.setAttribute('type', 'text');
+    const microfon = document.createElement('img');
+    microfon.src = pictureMicrofon;
+    microfon.setAttribute('id', 'microfonIcon')
+    const butnSearch = document.createElement('button');
+    butnSearch.setAttribute('id', 'setWeather');
+    butnSearch.innerText = 'Search';
+    const sectionSecond = document.createElement('section');
+    sectionSecond.setAttribute('id', 'title');
+    const countryCity = document.createElement('h1');
+    countryCity.setAttribute('id', 'countryCity');
+    const date = document.createElement('p');
+    date.setAttribute('id', 'date');
+    const map = document.createElement('section');
+    map.setAttribute('id', 'map');
+    firstgroup.appendChild(section);
+    firstgroup.appendChild(sectionInput);
+    section.appendChild(button);
+    section.appendChild(btnEnglish);
+    section.appendChild(btnPolish);
+    section.appendChild(btnFar);
+    section.appendChild(btnCel);
+    sectionInput.appendChild(input);
+    sectionInput.appendChild(microfon)
+    sectionInput.appendChild(butnSearch);
+    sectionSecond.appendChild(countryCity);
+    sectionSecond.appendChild(date);
+    body.appendChild(firstgroup);
+    body.appendChild(sectionSecond);
+    body.appendChild(map);
+}
+export default htmlLocal;
