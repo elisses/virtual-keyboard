@@ -1,0 +1,30 @@
+{
+  "name": "elisses-RSSPL2020Q1",
+  "version": "1.0.0",
+  "description": "Private repository for @elisses",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/elisses-RSSPL2020Q1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/elisses-RSSPL2020Q1/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/elisses-RSSPL2020Q1#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "lodash.mixin": "^4.3.0"
+  }
+}
